@@ -1,0 +1,21 @@
+#make services page
+ #make services section
+#join now section
+
+#contact us section
+    #contact form
+    #map
+
+
+
+
+
+
+
+
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Yeseva One', cursive;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Comfortaa', cursive;
