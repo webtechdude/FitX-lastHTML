@@ -12855,7 +12855,7 @@ section {
 }
 
 .Counter {
-  background: linear-gradient(#000000, #2b2b3a), url("../img/home-bg-2.jpg") no-repeat;
+  background: linear-gradient(#141414, #1f1a25), url("../img/home-bg-2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -13045,7 +13045,8 @@ section {
 }
 #team .card {
   border-radius: 25px;
-  background-color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #team .image-content,
 #team .card-content {
@@ -13065,7 +13066,7 @@ section {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #4070F4;
+  background-color: rgb(28, 28, 53);
   border-radius: 25px 25px 0 25px;
 }
 #team .overlay::before,
@@ -13076,18 +13077,18 @@ section {
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #4070F4;
+  background-color: rgb(28, 28, 53);
 }
 #team .overlay::after {
   border-radius: 0 25px 0 0;
-  background-color: #FFF;
+  background-color: #040009;
 }
 #team .card-image {
   position: relative;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background: #FFF;
+  background: rgba(0, 0, 0, 0.3);
   padding: 3px;
 }
 #team .card-image .card-img {
@@ -13096,38 +13097,39 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4070F4;
+  border: 2px solid #FFDA00;
 }
 #team .name {
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: rgb(255, 216, 143);
 }
 #team .description {
   font-size: 14px;
-  color: #707070;
+  color: whitesmoke;
   text-align: center;
 }
 #team .button {
   border: none;
   font-size: 16px;
-  color: #FFF;
+  color: whitesmoke;
   padding: 8px 16px;
-  background-color: #4070F4;
-  border-radius: 6px;
+  background-color: #FFDA00;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 #team .button:hover {
-  background: #265DF2;
+  background: whitesmoke;
+  color: #FFDA00;
+  border: 1px solid #FFDA00;
 }
 #team .swiper-navBtn {
-  color: #6E93f7;
+  color: #FFDA00;
   transition: color 0.3s ease;
 }
 #team .swiper-navBtn:hover {
-  color: #4070F4;
+  color: rgb(255, 216, 143);
 }
 #team .swiper-navBtn::before,
 #team .swiper-navBtn::after {
