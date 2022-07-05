@@ -21,7 +21,6 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 // Slider
-
 const swiper = new Swiper(".slide-content", {
    slidesPerView: 3,
    spaceBetween: 25,
