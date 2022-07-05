@@ -291,10 +291,12 @@ section {
     }
 }
 
+
+
 #about {
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 600px) {
         .img-box {
-            transform: rotate(0deg) translateY(0);
+            transform: none !important;
             transition: none;
         }
     }
@@ -626,6 +628,7 @@ section {
         background-color: $navyblue;
 
     }
+
     .overlay::before {
         border-right: 4px solid whitesmoke;
     }
@@ -732,35 +735,68 @@ section {
 
 .app {
     background: linear-gradient(#090012, black);
+
     h2 {
         font-family: 'Comfortaa';
     }
+
     .app-para {
         font-family: 'Staatliches', cursive;
+        font-size: larger;
     }
 }
 
 #contact {
     min-height: 100vh;
     background: linear-gradient(#000000, $dark-sienna);
+
+    @media only screen and (max-width: 600px) {
+        .form {
+            margin-bottom: 2em;
+        }
+
+        .map {
+            height: 12em;
+        }
+    }
+
     .form {
+        &:focus-within {
+            box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 2px, rgba(255, 255, 255, 0.07) 0px 2px 4px, rgba(255, 255, 255, 0.07) 0px 4px 8px, rgba(255, 255, 255, 0.07) 0px 8px 16px, rgba(255, 255, 255, 0.07) 0px 16px 32px, rgba(255, 255, 255, 0.07) 0px 32px 64px;
+        }
+
         min-height: 10rem;
         padding: 3rem;
         background: rgba(9, 21, 41, 0.335);
         backdrop-filter: blur(5px);
         border-radius: 5px;
+
         .form-label {
             font-family: 'Baloo Bhai 2', cursive;
         }
+
         .form-control {
             font-family: 'Poppins', sans-serif;
             background: transparent;
             color: $snow;
         }
     }
+
     .map {
         iframe {
             border-radius: 3px;
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(#210802bd, rgba(0, 0, 0, 0.593)), url('../img/bg/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .icon {
+        span {
+            font-family: 'Baloo Bhai 2', cursive;
         }
     }
 }
