@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <title>FitX Using Bootstrap</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -19,10 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Comfortaa&display=swap" rel="stylesheet">
     <!-- Fonts End -->
-    <!-- <link rel="stylesheet" href="node_modules/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="node_modules/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -31,7 +31,10 @@
     <nav class="navbar navbar-expand-lg sticky-top" id="navId">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/logo.png" alt="FitX" height="60"></a>
-
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
                     <li class="nav-item">
@@ -74,8 +77,10 @@
             </button>
 
         </div>
-        </div>
+
     </nav>
+    <!-- Navbar Ends -->
+    <!-- Home -->
     <section class="home pt-lg-3 pb-lg-3" id="home">
 
         <div class="container">
@@ -96,7 +101,8 @@
         </div>
 
     </section>
-
+    <!-- Home Ends -->
+    <!-- About -->
     <section class="about" id="about">
 
         <div class="container mt-3">
@@ -145,6 +151,8 @@
         </div>
 
     </section>
+    <!-- Home Ends -->
+    <!-- Counter -->
     <section class="Counter">
 
         <div class="container box-container">
@@ -170,8 +178,9 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <!-- Counter Ends -->
+    <!-- Services -->
     <section class="services bg-navyblue bg-gradient" id="services">
         <div class="container mt-3">
             <h1 class="title">Our Services</h1>
@@ -182,7 +191,8 @@
                         <img src="img/services/services-6.jpg" alt="Avatar"
                             class="w-100 shadow-1-strong rounded mb-4 image_services">
                         <div class="overTxt">
-                            SPINNING STUDIO
+                            <h3>SPINNING STUDIO</h3>
+                            <button class="btn btn-kidorange p-1">Check This</button>
                         </div>
                     </div>
 
@@ -190,7 +200,8 @@
                         <img src="img/services/services-3.jpg" alt="Avatar"
                             class="w-100 shadow-1-strong rounded mb-4 image_services">
                         <div class="overTxt">
-                            Ultra Stretching Exercises
+                            <h3>ULTRA STRETCHING EXERCISES</h3>
+                            <button class="btn btn-kidorange p-1">Check This</button>
                         </div>
                     </div>
                 </div>
@@ -200,7 +211,8 @@
                         <img src="img/services/services-1.jpg" alt="Avatar"
                             class="image w-100 shadow-1-strong rounded mb-4 image_services">
                         <div class="overTxt">
-                            ZUMBA CLASSES
+                            <h3>ZUMBA CLASSES</p>
+                                <button class="btn btn-kidorange p-1">Check This</button>
                         </div>
                     </div>
 
@@ -208,7 +220,8 @@
                         <img src="img/services/services-4.jpg" alt="Avatar"
                             class="w-100 shadow-1-strong rounded mb-4 image_services">
                         <div class="overTxt">
-                            SPECIAL TRAINING
+                            <h3>SPECIAL TRAINING</p>
+                                <button class="btn btn-kidorange p-1">Check This</button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +231,8 @@
                         <img src="img/services/services-5.jpg" alt="Avatar"
                             class="w-100 shadow-1-strong rounded mb-4 image_services">
                         <div class="overTxt">
-                            FUNCTIONAL TRAINING AREA AND PLYOMETRIC BOXES
+                            <h3>FUNCITONAL TRAINING AND POLYMETRIC BOXES</h3>
+                            <button class="btn btn-kidorange p-1">Check This</button>
                         </div>
                     </div>
 
@@ -226,7 +240,8 @@
                         <img src="img/services/services-2.jpg" alt="Avatar"
                             class="w-100 shadow-1-strong rounded mb-4 image_services">
                         <div class="overTxt">
-                            YOGA CLASSES
+                            <h3>YOGA CLASSES</h3>
+                            <button class="btn btn-kidorange p-1">Check This</button>
                         </div>
                     </div>
                 </div>
@@ -236,62 +251,90 @@
                 More Services</div>
         </div>
     </section>
-    <section class="courses bg-altdark bg-gradient" id="courses">
+    <!-- Services Ends -->
+    <!-- Courses -->
+    <section class="courses wrapper bg-altdark bg-gradient" id="courses">
         <div class="container mt-3">
             <h1 class="title mb-4">Main Fitness Courses</h1>
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <h1 class="h1">Courses That Might Interest You</h1>
                 </div>
-                <div class="carousel-inner rounded-1 shadow img-thumbnail">
-                    <div class="carousel-item active">
-                        <img src="img/courses/primary.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block text-start">
-                            <h4 class="text-fancyYellow">COURSE</h4>
-                            <span class="badge bg-success">PRIMARY <i class="fa-solid fa-face-laugh-beam"></i></span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi nobis accusantium
-                                autem quae rerum at ea, est nemo repudiandae!</p>
-                            <button class="btn btn-outline-altlight rounded-0 bg-gradient">Enroll or Learn More</button>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-white card-has-bg click-col"
+                        style="background-image:url('img/courses/primary.jpg');">
+                        <img class="card-img d-none" src="img/courses/primary.jpg"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <p class="card-meta mb-2">¨A year from now you may wish you had started today.¨ – Karen
+                                    Lamb</p>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">COURSE #1</a></h4>
+                                <h5><i class="fa-solid fa-face-smile-beam text-fancyYellow"></i> Primary</h5>
+                            </div>
+                            <div class="plan-btn">
+                                <button class="btn btn-outline-snow rounded-0">Choose Primay Plan</button>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="mr-3" src="img/logo.png" alt="Generic placeholder image"
+                                        style="max-width:50px">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="img/courses/pro.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block text-start">
-                            <h4 class="text-fancyYellow">COURSE</h4>
-                            <span class="badge bg-kidorange">PRO <i class="fa-solid fa-face-laugh-beam"></i></span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor nisi incidunt
-                                blanditiis reprehenderit dolorum cum amet! Esse, nesciunt doloremque!</p>
-                            <button class="btn btn-outline-altlight rounded-0 bg-gradient">Enroll or Learn More</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/courses/elite.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block text-start">
-                            <h4 class="text-fancyYellow">COURSE</h4>
-                            <span class="badge bg-altlight text-altdark">ELITE <i class="fa-solid fa-bolt"></i></span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur natus accusantium autem.
-                                Officiis nisi soluta quae animi, quibusdam in pariatur.
-                            </p>
-                            <button class="btn btn-outline-altlight rounded-0 bg-gradient">Enroll or Learn More</button>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-white card-has-bg click-col"
+                        style="background-image:url('img/courses/pro.jpg');">
+                        <img class="card-img d-none" src="img/courses/pro.jpg"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <p class="card-meta mb-2">“Once you learn to quit, it becomes a habit.¨ ― Vince Lombardi
+                                    Jr</p>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">COURSE #2</a></h4>
+                                <h5><i class="fa-solid fa-fire-flame-curved text-success"></i> Pro</h5>
+                            </div>
+                            <div class="plan-btn">
+                                <button class="btn btn-outline-snow rounded-0">Choose Pro Plan</button>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="mr-3" src="img/logo.png" alt="Generic placeholder image"
+                                        style="max-width:50px">
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-white card-has-bg click-col"
+                        style="background-image:url('img/courses/elite.jpg');">
+                        <img class="card-img d-none" src="img/courses/elite.jpg"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <p class="card-meta mb-2">¨Exercise is labor without weariness.¨ – Samuel Johnson</p>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">COURSE #3</a></h4>
+                                <h5><i class="fa-solid fa-bolt-lightning text-ebony"></i> Elite</h5>
+                            </div>
+                            <div class="plan-btn">
+                                <button class="btn btn-outline-snow rounded-0">Choose Elite Plan</button>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="mr-3" src="img/logo.png" alt="Generic placeholder image"
+                                        style="max-width:50px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="join_section mt-5">
                 <div class="row">
@@ -302,22 +345,191 @@
                         <button type="button" class="btn btn-kidorange rounded-1 joinNow">JOIN NOW</button>
                     </div>
                 </div>
-
-
             </div>
     </section>
+    <!-- Courses Ends -->
+
+    <!-- Team -->
+    <section class="team" id="team">
+        <div class="container">
+            <h1 class="title">Our Team</h1>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_2.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_3.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_4.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_5.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_6.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_7.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_8.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="img/team/team_9.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Ends -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- <script src="node_modules/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -12743,6 +12743,7 @@ body {
 
 section {
   padding: 1rem 1rem 3rem;
+  scroll-margin-top: 5rem;
 }
 
 .title {
@@ -12806,6 +12807,12 @@ section {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #about .img-box {
+    transform: rotate(0deg) translateY(0);
+    transition: none;
+  }
+}
 #about .img-box {
   background: radial-gradient(rgba(255, 250, 225, 0.2), rgba(0, 0, 0, 0.644)), url("../img/bg/bg-5.png");
   width: 100%;
@@ -12867,13 +12874,13 @@ section {
 
 #services .container .service_cont {
   position: relative;
+  overflow: hidden;
 }
 #services .container .service_cont:hover .image_services {
-  filter: blur(2px);
+  filter: blur(2px) brightness(50%);
 }
 #services .container .service_cont:hover .overTxt {
   opacity: 1;
-  background-color: rgba(251, 210, 44, 0.8);
 }
 #services .container .service_cont .image_services {
   display: block;
@@ -12893,32 +12900,99 @@ section {
   border-radius: 3px;
   text-align: center;
   color: white;
-  font-size: 17px;
   padding: 20px 5px;
   width: 90%;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
 }
+#services .container .service_cont .overTxt .btn {
+  font-family: "poppins", sans-serif;
+}
 
-#courses .carousel-item img {
-  height: 40em;
+#courses .card {
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
-#courses .carousel-caption {
-  border-radius: 6px;
-  padding: 5px 10px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.2);
+@media (max-width: 768px) {
+  #courses .card {
+    min-height: 350px;
+  }
 }
-#courses .carousel-caption h4, #courses .carousel-caption .h4 {
+@media (max-width: 420px) {
+  #courses .card {
+    min-height: 300px;
+  }
+}
+#courses .card .card-meta {
   font-family: "Comfortaa", cursive;
 }
-#courses .carousel-caption p {
-  font-family: "Poppins", sans-serif;
+#courses .card .card-title a {
+  text-decoration: none;
+  font-family: "Staatliches", cursive;
+}
+#courses .card .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#courses .card.card-has-bg {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#courses .card.card-has-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#courses .card.card-has-bg:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 300%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+#courses .card.card-has-bg:hover .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: rgb(35, 79, 109);
+  background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, rgb(4, 69, 114) 100%);
+}
+#courses .card .card-footer {
+  background: none;
+  border-top: none;
+}
+#courses .card .card-meta {
+  color: #2fafff;
+}
+#courses .card .card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+#courses .card:hover {
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+#courses .card:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+#courses .card .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: rgb(35, 79, 109);
+  background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, rgb(69, 95, 113) 100%);
 }
 #courses .join_section img {
   transform: translatey(0px);
-  -webkit-animation: float 5s ease-in-out infinite;
-          animation: float 5s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite alternate-reverse both;
 }
 @-webkit-keyframes float {
   0% {
@@ -12957,4 +13031,126 @@ section {
 #courses .join_section .joinTxt button {
   font-family: "Staatliches", cursive;
   font-size: 2em;
+}
+
+#team .slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+#team .slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+#team .card {
+  border-radius: 25px;
+  background-color: #FFF;
+}
+#team .image-content,
+#team .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+#team .image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+#team .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070F4;
+  border-radius: 25px 25px 0 25px;
+}
+#team .overlay::before,
+#team .overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+#team .overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+#team .card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+#team .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+#team .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+#team .description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+#team .button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#team .button:hover {
+  background: #265DF2;
+}
+#team .swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+#team .swiper-navBtn:hover {
+  color: #4070F4;
+}
+#team .swiper-navBtn::before,
+#team .swiper-navBtn::after {
+  font-size: 35px;
+}
+#team .swiper-button-next {
+  right: 0;
+}
+#team .swiper-button-prev {
+  left: 0;
+}
+#team .swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+}
+#team .swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+@media screen and (max-width: 768px) {
+  #team .slide-content {
+    margin: 0 10px;
+  }
+  #team .swiper-navBtn {
+    display: none;
+  }
 }/*# sourceMappingURL=custom.css.map */
