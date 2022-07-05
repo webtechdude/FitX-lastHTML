@@ -49,35 +49,37 @@ body {
     .cta {
         border: none;
         background: none;
+
+        span {
+            padding-bottom: 7px;
+            letter-spacing: 4px;
+            font-size: 12px;
+            padding-right: 15px;
+            text-transform: uppercase;
+        }
+
+        svg {
+            -webkit-transform: translateX(-8px);
+            -ms-transform: translateX(-8px);
+            transform: translateX(-8px);
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        &:hover svg {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        &:active svg {
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+        }
     }
 
-    .cta span {
-        padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 12px;
-        padding-right: 15px;
-        text-transform: uppercase;
-    }
 
-    .cta svg {
-        -webkit-transform: translateX(-8px);
-        -ms-transform: translateX(-8px);
-        transform: translateX(-8px);
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-    }
-
-    .cta:hover svg {
-        -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    .cta:active svg {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-    }
 
     .hover-underline-animation {
         position: relative;
@@ -610,6 +612,7 @@ section {
         width: 100%;
         background-color: $navyblue;
         border-radius: 25px 25px 0 25px;
+        border: 4px solid whitesmoke;
     }
 
     .overlay::before,
@@ -621,11 +624,16 @@ section {
         height: 40px;
         width: 40px;
         background-color: $navyblue;
+
+    }
+    .overlay::before {
+        border-right: 4px solid whitesmoke;
     }
 
     .overlay::after {
         border-radius: 0 25px 0 0;
         background-color: #040009;
+        border-top: 4px solid whitesmoke;
     }
 
     .card-image {
@@ -635,6 +643,7 @@ section {
         border-radius: 50%;
         background: rgba(0, 0, 0, 0.3);
         padding: 3px;
+
         .card-img {
             height: 100%;
             width: 100%;
@@ -661,15 +670,19 @@ section {
         border: none;
         font-size: 16px;
         color: whitesmoke;
+        font-family: 'Baloo Bhai 2', cursive;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
         padding: 8px 16px;
         background-color: $fancyYellow;
         margin: 14px;
         cursor: pointer;
         transition: all 0.3s ease;
+
         &:hover {
             background: whitesmoke;
             color: $fancyYellow;
             border: 1px solid $fancyYellow;
+            text-shadow: 0 0 3px $fancyYellow;
         }
     }
 

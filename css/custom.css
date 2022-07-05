@@ -13068,6 +13068,7 @@ section {
   width: 100%;
   background-color: rgb(28, 28, 53);
   border-radius: 25px 25px 0 25px;
+  border: 4px solid whitesmoke;
 }
 #team .overlay::before,
 #team .overlay::after {
@@ -13079,9 +13080,13 @@ section {
   width: 40px;
   background-color: rgb(28, 28, 53);
 }
+#team .overlay::before {
+  border-right: 4px solid whitesmoke;
+}
 #team .overlay::after {
   border-radius: 0 25px 0 0;
   background-color: #040009;
+  border-top: 4px solid whitesmoke;
 }
 #team .card-image {
   position: relative;
@@ -13113,6 +13118,8 @@ section {
   border: none;
   font-size: 16px;
   color: whitesmoke;
+  font-family: "Baloo Bhai 2", cursive;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   padding: 8px 16px;
   background-color: #FFDA00;
   margin: 14px;
@@ -13123,6 +13130,7 @@ section {
   background: whitesmoke;
   color: #FFDA00;
   border: 1px solid #FFDA00;
+  text-shadow: 0 0 3px #FFDA00;
 }
 #team .swiper-navBtn {
   color: #FFDA00;
