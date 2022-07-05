@@ -1,5 +1,5 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import "../assets/bootstrap/scss/functions";
+@import "../assets/bootstrap/scss/variables";
 $custom-theme-colors: (
     "fancyYellow": #FFDA00,
     "altlight": #f6fff2,
@@ -13,7 +13,7 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../assets/bootstrap/scss/bootstrap";
 $fancyYellow: #FFDA00;
 $veryDark: rgb(16, 13, 13);
 $dark-sienna: #230903ff;
@@ -727,4 +727,40 @@ section {
         }
     }
 
+}
+
+
+.app {
+    background: linear-gradient(#090012, black);
+    h2 {
+        font-family: 'Comfortaa';
+    }
+    .app-para {
+        font-family: 'Staatliches', cursive;
+    }
+}
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(#000000, $dark-sienna);
+    .form {
+        min-height: 10rem;
+        padding: 3rem;
+        background: rgba(9, 21, 41, 0.335);
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        .form-label {
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .form-control {
+            font-family: 'Poppins', sans-serif;
+            background: transparent;
+            color: $snow;
+        }
+    }
+    .map {
+        iframe {
+            border-radius: 3px;
+        }
+    }
 }
