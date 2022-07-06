@@ -14,3 +14,13 @@ font-family: 'Yeseva One', cursive;
 font-family: 'Baloo Bhai 2', cursive;
 font-family: 'Comfortaa', cursive;
 
+
+
+    "fancyYellow": #FFDA00,
+    "altlight": #f6fff2,
+    "altdark": #090012,
+    "navyblue": rgb(28, 28, 53),
+    "dark-sienna": #230903ff,
+    "snow": rgb(181, 170, 255),
+    "ebony": rgb(221, 221, 221),
+    "kidorange": rgb(255, 216, 143),

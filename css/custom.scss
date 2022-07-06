@@ -429,6 +429,10 @@ section {
 
 #courses {
 
+    .h1 {
+        font-family: 'Yeseva One', cursive;
+        font-size: medium;
+    }
 
     //post card styles
 
@@ -439,6 +443,8 @@ section {
         border-radius: 20px;
         min-height: 450px;
         box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+
 
         @media (max-width: 768px) {
             min-height: 350px;
@@ -676,16 +682,14 @@ section {
         font-family: 'Baloo Bhai 2', cursive;
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
         padding: 8px 16px;
-        background-color: $fancyYellow;
-        margin: 14px;
+        background-color: $kidorange;
         cursor: pointer;
         transition: all 0.3s ease;
 
         &:hover {
             background: whitesmoke;
             color: $fancyYellow;
-            border: 1px solid $fancyYellow;
-            text-shadow: 0 0 3px $fancyYellow;
+            border: 1px solid $kidorange;
         }
     }
 
@@ -794,9 +798,67 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     .icon {
         span {
             font-family: 'Baloo Bhai 2', cursive;
+        }
+    }
+
+    .footer-ul {
+
+        a {
+            margin-bottom: 1em;
+            color: $kidorange;
+
+            &:hover {
+                color: $fancyYellow;
+            }
+        }
+    }
+
+    .footer-heading {
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .footer-social {
+        font-size: large;
+
+        .fa-facebook {
+            &:hover {
+                color: #4267B2;
+            }
+        }
+
+        .fa-instagram {
+            &:hover {
+                color: #E1306C;
+            }
+        }
+
+        .fa-twitter {
+            &:hover {
+                color: #00acee;
+            }
+        }
+
+        .fa-telegram {
+            &:hover {
+                color: #0088CC;
+            }
+        }
+
+        .fa-whatsapp {
+            &:hover {
+                color: #25D366;
+            }
+        }
+
+        .fa-linkedin {
+            &:hover {
+                color: #0072b1;
+            }
         }
     }
 }
