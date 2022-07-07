@@ -399,13 +399,13 @@ section {
 
             .image_services {
                 display: block;
-                transition: .5s ease;
+                transition: 1s ease-in-out;
                 backface-visibility: hidden;
             }
 
             .overTxt {
                 font-family: 'Baloo Bhai 2', cursive;
-                transition: .5s ease;
+                transition: .2s ease-in-out;
                 opacity: 0;
                 position: absolute;
                 top: 50%;
@@ -680,9 +680,8 @@ section {
         font-size: 16px;
         color: whitesmoke;
         font-family: 'Baloo Bhai 2', cursive;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
         padding: 8px 16px;
-        background-color: $kidorange;
+        background-color: $fancyYellow;
         cursor: pointer;
         transition: all 0.3s ease;
 
@@ -752,7 +751,7 @@ section {
 
 #contact {
     min-height: 100vh;
-    background: linear-gradient(#000000, $dark-sienna);
+    background: linear-gradient(#000000, #2C1726);
 
     @media only screen and (max-width: 600px) {
         .form {
@@ -794,10 +793,11 @@ section {
 }
 
 .footer {
-    background: linear-gradient(#210802bd, rgba(0, 0, 0, 0.593)), url('../img/bg/contact.jpg');
+    background: linear-gradient(rgba(44, 23, 38, 0.6), rgba(0, 0, 0, 0.6)), url('../img/home-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.656);
 
     .icon {
         span {
